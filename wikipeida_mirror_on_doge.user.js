@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         wikipeida mirror on dogedoge
 // @namespace    https://github.com/zhfanrui/tampermonkey_scripts
-// @version      0.2
+// @version      0.3
 // @description  Make dogedoge search's wikipedia results available in the wall
 // @author       Stephen Fan
 // @updateURL    https://github.com/zhfanrui/tampermonkey_scripts/raw/master/wikipeida_mirror_on_doge.user.js
