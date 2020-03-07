@@ -166,8 +166,8 @@
             var phoneStyle = '' +
             'color:#9E9E9E!important;' +
             '';
-            html += "<a target='_blank' href='https://www.google.com/search?q=" + text + "&tbm=isch'>[Pic]</a> ";
-            html += "<a target='_blank' href='http://www.91dub.com/search/" + text + "?type=search'>[91]</a> ";
+            html += "<a target='_blank' href='https://google.zhfanrui.workers.dev/search?q=" + text + "&tbm=isch'>[Pic]</a> ";
+//             html += "<a target='_blank' href='http://www.91dub.com/search/" + text + "?type=search'>[91]</a> ";
             html += "<a target='_blank' href='https://www.ldoceonline.com/dictionary/" + text + "'>[Longman]</a>";
             html += "<a target='_blank' href='https://www.urbandictionary.com/define.php?term=" + text + "'>[Urban]</a>";
 
@@ -175,7 +175,8 @@
                 html += '<span onmouseover=\'var audio = document.createElement("audio");audio.src = ("https://dict.youdao.com/dictvoice?audio=' + word.ukspeech + '");audio.play();\' style="' + phoneStyle + '">英[' + ukphone + '] </span>';
             }
             if (!!usphone && usphone.length != 0) {
-                html += '<span style="' + phoneStyle + '">美[' + usphone + '] </span>';
+                html += '<span onmouseover=\'var audio = document.createElement("audio");audio.src = ("https://dict.youdao.com/dictvoice?audio=' + word.usspeech + '");audio.play();\' style="' + phoneStyle + '">英[' + usphone + '] </span>';
+//                 html += '<span style="' + phoneStyle + '">美[' + usphone + '] </span>';
             }
             if (html.length != 0) {
                 html += '<br />';
