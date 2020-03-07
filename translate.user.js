@@ -2,7 +2,7 @@
 // @name         智能划词翻译
 // @namespace    https://greasyfork.org/zh-CN/users/150560
 // @updateURL    https://github.com/zhfanrui/tampermonkey_scripts/raw/master/translate.user.js
-// @version      1.4
+// @version      1.4.1
 // @description  【自用修改版】划词翻译,自动切换谷歌翻译和有道词典
 // @author       田雨菲，Fan
 // @match        *
