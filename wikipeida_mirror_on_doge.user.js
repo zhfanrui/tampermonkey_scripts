@@ -25,7 +25,7 @@
         console.log(i);
         if (wiki[i].innerText.includes("Wikipedia") ){
             var href = url[i].children[0].innerText;
-            href = href.replace("wikipedia", "wikipedia-mirror");
+            href = href.replace(/..\.wikipedia.org/, "wikipedia-mirror");
             wiki[i].children[0].href = href;
             wiki[i].children[0].rel += " noreferrer";
         }
