@@ -19,15 +19,15 @@
 
     var wiki = document.getElementsByClassName("result__title");
     var url = document.getElementsByClassName("result__extras");
-    console.log(wiki[0]);
-    console.log(url[0]);
+//     console.log(wiki[0]);
+//     console.log(url[0]);
     for(var i in wiki){
-        console.log(i);
+//         console.log(i);
+        var href = url[i].children[0].innerText;
         if (wiki[i].innerText.includes("Wikipedia") ){
-            var href = url[i].children[0].innerText;
             href = href.replace(/..\.wikipedia.org/, "wiki.zhfanrui.workers.dev");
-            wiki[i].children[0].href = href;
-            wiki[i].children[0].rel += " noreferrer";
         }
+        wiki[i].children[0].href = href;
+        wiki[i].children[0].rel += " noreferrer";
     }
 })();
